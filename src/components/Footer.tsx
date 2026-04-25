@@ -11,9 +11,9 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 function Footer() {
-  const email = "anthusgs@gmail.com";
-  const phone = "85476 50461";
-  const whatsapp = "918547650461";
+  const email = "rectangularspace1@gmail.com";
+  const phone = "8129836578";
+  const whatsapp = "8547650461";
 
   const handleMouseEnter = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.currentTarget.style.borderColor = "#c8a96e";

@@ -37,7 +37,7 @@ function Home() {
         className="flex flex-col justify-center items-center md:items-start text-center md:text-left px-6 md:w-1/2"
       >
         <h1 className="font-extrabold text-white text-3xl md:text-5xl">
-          Anandhu V Vijay
+          Anandhu Vijay
         </h1>
 
         <hr className="my-4 w-2/3 md:w-full border-gray-700" />
