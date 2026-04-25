@@ -31,7 +31,7 @@ const instagramReels = [
   "https://www.instagram.com/reel/DPBjROQDw6X/",
   "https://www.instagram.com/reel/DBDMIIuxina/",
   "https://www.instagram.com/reel/DMCU_k2uObk/",
-  "https://www.instagram.com/reel/DEXJI9RyAZN/",
+  // "https://www.instagram.com/reel/DEXJI9RyAZN/",
   "https://www.instagram.com/reel/DTYEYQtDcYy/",
 ];
 
