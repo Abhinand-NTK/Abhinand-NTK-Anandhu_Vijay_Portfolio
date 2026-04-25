@@ -16,7 +16,8 @@ const youtubeVideos = [
   "https://www.youtube.com/watch?v=p-X3xf0H-uI",
   "https://youtu.be/Eh9-xUfuqiU?si=iGYseP5Z47KCfb2f",
   "https://youtu.be/ovHqOxilGLM?si=n6NDocNruICfnYAX",
-  "https://youtu.be/08cmlaPWvzU?si=hZBZI63-2upJ518Y"
+  "https://youtu.be/08cmlaPWvzU?si=hZBZI63-2upJ518Y",
+  "https://youtu.be/-GQm5AC6e7U?si=IbHRyVNLTusNvgbU"
 ];
 
 const instagramReels = [
@@ -24,7 +25,7 @@ const instagramReels = [
   // "https://www.instagram.com/reel/DR_vOpHD0m8/",
   "https://www.instagram.com/reel/DTKkECvD_eP/",
   "https://www.instagram.com/reel/DFkdk15uUkg/",
-  "https://www.instagram.com/reel/DEXcHEGTBl1/",
+  // "https://www.instagram.com/reel/DEXcHEGTBl1/",
   "https://www.instagram.com/reel/DNid6H0zfCb/",
   "https://www.instagram.com/reel/C_KxHdqyUbZ/",
   "https://www.instagram.com/reel/DF0AGWVPnSV/",
