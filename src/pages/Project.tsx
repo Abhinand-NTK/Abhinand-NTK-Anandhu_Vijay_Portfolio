@@ -13,11 +13,15 @@ const THEMES = {
 const youtubeVideos = [
   "https://www.youtube.com/watch?v=nTfQKC6QaSY",
   "https://www.youtube.com/watch?v=ZOiNTrrGL4Q",
+  "https://www.youtube.com/watch?v=p-X3xf0H-uI",
+  "https://youtu.be/Eh9-xUfuqiU?si=iGYseP5Z47KCfb2f",
+  "https://youtu.be/ovHqOxilGLM?si=n6NDocNruICfnYAX",
+  "https://youtu.be/08cmlaPWvzU?si=hZBZI63-2upJ518Y"
 ];
 
 const instagramReels = [
   "https://www.instagram.com/reel/C_cv_XrIREw/",
-  "https://www.instagram.com/reel/DR_vOpHD0m8/",
+  // "https://www.instagram.com/reel/DR_vOpHD0m8/",
   "https://www.instagram.com/reel/DTKkECvD_eP/",
   "https://www.instagram.com/reel/DFkdk15uUkg/",
   "https://www.instagram.com/reel/DEXcHEGTBl1/",
@@ -66,7 +70,7 @@ function VideoModal({ url, type, onClose }: { url: string; type: 'youtube' | 'in
           width: type === 'instagram'
             ? (isRotated ? "500px" : "500px")  // Increased from 50vh to 90vh
             : (isRotated ? "500px" : "450px"),
-            
+
           maxWidth: "1205vw",
           transition: "all 0.5s cubic-bezier(0.4, 0, 0.2, 1)",
           display: 'flex',
@@ -123,15 +127,35 @@ export default function Project() {
   return (
     <div style={{ background: "#0d0d0d", minHeight: "100vh", padding: "40px" }}>
       {/* YouTube Section */}
-      <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "20px" }}>
+      <div
+        style={{
+          display: "grid",
+          gridTemplateColumns: "repeat(2, 1fr)", // ✅ exactly 2 columns
+          gap: "20px"
+        }}
+      >
         {youtubeVideos.map((url, i) => (
           <div
             key={i}
-            onClick={() => setSelectedVideo({ url, type: 'youtube' })}
-            style={{ cursor: 'pointer', border: '1px solid #222', borderRadius: '12px', padding: '10px' }}
+            onClick={() => setSelectedVideo({ url, type: "youtube" })}
+            style={{
+              cursor: "pointer",
+              border: "1px solid #222",
+              borderRadius: "12px",
+              padding: "10px"
+            }}
           >
             <YouTubeEmbed url={url} width="100%" height={350} />
-            <p style={{ color: THEMES.youtube.color, fontSize: '12px', marginTop: '10px' }}>Open Detail View</p>
+
+            <p
+              style={{
+                color: THEMES.youtube.color,
+                fontSize: "12px",
+                marginTop: "10px"
+              }}
+            >
+              Open Detail View
+            </p>
           </div>
         ))}
       </div>
